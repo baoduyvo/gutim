@@ -1,0 +1,15 @@
+.dropdown-menu > .dropdown-item:hover {
+    background: transparent !important;
+}
+
+.dropdown-menu > a:after {
+    background: none !important;
+}
+
+.dropdown-menu > a {
+    padding: 12px 0 !important;
+}
+
+.error {
+    color: red;
+}

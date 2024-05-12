@@ -1,0 +1,89 @@
+.upload__inputfile {
+    /* Hides the input file element */
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.upload__box > .upload__btn-box > .upload__btn > p {
+    padding-top: 12px;
+}
+.upload__btn {
+    /* Styles for the upload button */
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    min-width: 116px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid;
+    background-color: #4045ba;
+    border-color: #4045ba;
+    border-radius: 10px;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+.upload__btn:hover {
+    /* Hover effect for the upload button */
+    background-color: unset;
+    color: #4045ba;
+}
+
+.upload__img-wrap {
+    /* Styles for the container of uploaded images */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.upload__img-box {
+    /* Styles for individual image boxes */
+    height: 120px;
+    width: 120px;
+    padding: 0 10px;
+    margin-bottom: 12px;
+    position: relative;
+    /* Added position for the close button */
+}
+
+.upload__img-box img {
+    object-fit: cover;
+    padding: 10px;
+}
+
+.upload__img-close {
+    /* Styles for the close button on each image */
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    line-height: 24px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.upload__img-close::after {
+    /* Content and styles for the close button */
+    content: "\2716";
+    font-size: 14px;
+    color: white;
+}
+
+.edit {
+    padding: 10px;
+}
+
+#error {
+    color: red;
+    margin-bottom: 10px;
+}
+
