@@ -15,7 +15,8 @@
                         <ul class="gallery-controls">
                             @foreach ($nameAlbums as $album)
                                 <li>
-                                    <h3 data-album-id="{{ $album->id }}">{{ $album->name }}</h3>
+                                    <h3 class="primary-btn signup-btn" data-album-id="{{ $album->id }}">{{ $album->name }}
+                                    </h3>
                                 </li>
                             @endforeach
                         </ul>
