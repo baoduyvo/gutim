@@ -10,8 +10,6 @@
                 <ul>
                     <li class="active"><a href="{{ url('') }}">Home</a></li>
                     <li><a href="{{ url('service') }}">Service</a></li>
-                    <li><a href="{{ url('aboutus') }}">About</a></li>
-                    <li><a href="{{ url('contact') }}">Contacts</a></li>
                     <li>
                         <?php
                         $gyms = DB::select('select * from gym');
@@ -31,9 +29,13 @@
                             </div>
                         </div>
                     </li>
+                    <li><a href="{{ url('aboutus') }}">About</a></li>
+                    <li><a href="{{ url('contact') }}">Contacts</a></li>
+
                 </ul>
             </nav>
-            <a href="{{ Session::has('id') ? route('client.login.logout') : url('login') }}" class="primary-btn signup-btn">
+            <a href="{{ Session::has('id') ? route('client.login.logout') : url('login') }}"
+                class="primary-btn signup-btn">
                 {{ Session::has('id') ? 'Logout' : 'Login' }}
             </a>
         </div>
